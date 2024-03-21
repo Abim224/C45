@@ -36,7 +36,7 @@ agent_id_list=[34622818,34622820,34670597,34670594,34787623
 
 mask =final_df['agent_no'].isin(agent_id_list)
 final_ldl_df = final_df[mask] 
-agent_shift = pd.read_excel(r"C:\Users\abinash.m\Desktop\Report\Agent_Schedule.xlsx")
+agent_shift = pd.read_excel("./Agent_Schedule.xlsx")
 
 agent_shift1 =agent_shift.copy()
 melted_df = pd.melt(agent_shift, id_vars=['VN ID', 'Name', 'WM Role', 'Location', 'agent_no'], 
